@@ -55,26 +55,26 @@
                 <body>
                 
                 <div class="w3-content w3-section" style="max-width:500px">
-                  <img class="mySlides w3-animate-fading" src="img/teleferico1e.jpg" style="width:100%">
-                  <img class="mySlides w3-animate-fading" src="img/teleferico2e.jpg" style="width:100%">
-                  <img class="mySlides w3-animate-fading" src="img/teleferico3e.jpg" style="width:100%">
-                  <img class="mySlides w3-animate-fading" src="img/teleferico4e.jpg" style="width:100%">
+                  <img class="mySlides2 w3-animate-fading" src="img/teleferico1e.jpg" style="width:100%">
+                  <img class="mySlides2 w3-animate-fading" src="img/teleferico2e.jpg" style="width:100%">
+                  <img class="mySlides2 w3-animate-fading" src="img/teleferico3e.jpg" style="width:100%">
+                  <img class="mySlides2 w3-animate-fading" src="img/teleferico4e.jpg" style="width:100%">
                 </div>
                 
                 <script>
-                var myIndex = 0;
-                carousel();
+                var myIndex2 = 0;
+                carrusel();
                 
-                function carousel() {
+                function carrusel() {
                   var i;
-                  var x = document.getElementsByClassName("mySlides");
+                  var x = document.getElementsByClassName("mySlides2");
                   for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";  
                   }
-                  myIndex++;
-                  if (myIndex > x.length) {myIndex = 1}    
-                  x[myIndex-1].style.display = "block";  
-                  setTimeout(carousel, 9000);    
+                  myIndex2++;
+                  if (myIndex2 > x.length) {myIndex2 = 1}    
+                  x[myIndex2-1].style.display = "block";  
+                  setTimeout(carrusel, 9000);    
                 }
                 </script>
                 
